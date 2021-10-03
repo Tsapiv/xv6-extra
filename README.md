@@ -53,7 +53,7 @@ Utility outputs the datetime in standard format: `year-month-day hour:minute:sec
 * `usys.S`
 * `date.c`
 
-Note: each file contains comments of what has been done and why.
+Note: each file contains comments on what has been done and why.
 
 ## Task 3:
 
@@ -95,4 +95,4 @@ PID     Name    Status  Mem     Open Files
 * `sysfile.c`
 * `htop.c/h`
 
-Note: each file contains comments of what has been done and why.
+Note: each file contains comments on what has been done and why.
