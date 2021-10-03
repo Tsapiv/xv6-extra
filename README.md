@@ -1,6 +1,6 @@
 ## Task 1:
 
-####Usage:
+#### Usage:
 In order to enable printing additional info on syscalls,
 one need to define variable `SYS_DETAILS` in file `syscall.c`.
 After compilation, launch the emulator.
@@ -32,20 +32,20 @@ sys_write(int: 1, int: 1, int: 11519, obj: 2cff, l) -> 1
 
 sys_write(int: 1, int: 1, int: 11519, obj: 2cff, e) -> 1
 ```
-####Changes in xv6 code:
+#### Changes in xv6 code:
 * `syscall.c`:
   * modified function `void syscall(void)` in order to get value of `eax` register and then determine the name of syscall. After syscall register `eax` contains return value of corresponding syscall.
   * modified functions (`int argstr(int n, char **pp), int argptr(int n, char **pp, int size), int argint(int n, int *ip)`) in order to print out arguments with which syscalls are called.
 
 ## Task 2:
 
-####Usage:
+#### Usage:
 ```shell
 $ date
 2021-10-3 13:53:19
 ```
 Utility outputs the datetime in standard format: `year-month-day hour:minute:second`. Note that it's GMT.
-####Changes in xv6 code:
+#### Changes in xv6 code:
 * `syscall.c`
 * `syscall.h`
 * `sysproc.c`
@@ -57,7 +57,7 @@ Note: each file contains comments of what has been done and why.
 
 ## Task 3:
 
-####Usage:
+#### Usage:
 ```shell
 $ htop
 Datetime: 2021-10-3 14:24:0
@@ -84,7 +84,7 @@ PID     Name    Status  Mem     Open Files
 7       htop    R       12288   3
 8       zombie  Z       12288   0
 ```
-####Changes in xv6 code:
+#### Changes in xv6 code:
 * `syscall.c`
 * `syscall.h`
 * `sysproc.c`
